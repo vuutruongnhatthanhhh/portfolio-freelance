@@ -165,142 +165,42 @@ export const experienceItems: Record<Locale, ExperienceItem[]> = {
       liveUrl: "https://bighead-eight.vercel.app/",
 
       contentHtml: `
-  <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3">
-   1. Công nghệ sử dụng
-  </h2>
+ 
 
   
 
-<h3 class="text-xl font-semibold text-slate-800 dark:text-slate-200 mt-4 mb-2">
- 1.1. Front end
-  </h3>
-  <ul class="list-disc pl-6 space-y-2 text-lg text-slate-800 dark:text-slate-300">
-<li>Xây dựng frontend với <strong>Next.js</strong> và <strong>MUI (Material UI)</strong> để tạo giao diện hiện đại. </li>
-<li>Tích hợp <strong>Zustand</strong> để quản lý trạng thái ứng dụng gồm thông tin phiên đăng nhập, chế độ sáng/tối và thẻ ghi nhớ học gần nhất.</li>
 
-<li>Triển khai xác thực người dùng với <strong>NextAuth</strong>, hỗ trợ đăng nhập qua tài khoản Google và GitHub.</li>
- 
+<ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
+  <li>Trang giới thiệu cung cấp thông tin về cửa hàng, sứ mệnh phát triển và cam kết mang đến các phụ kiện mô tô chất lượng cao.</li>
+  <li>Trang sản phẩm trưng bày đa dạng các phụ kiện như mũ bảo hiểm, găng tay, đèn trợ sáng, thùng xe và đồ bảo hộ chính hãng.</li>
+  <li>Trang tin tức chia sẻ kinh nghiệm sử dụng, đánh giá sản phẩm và những kiến thức hữu ích dành cho người yêu xe mô tô.</li>
+  <li>Trang liên hệ hỗ trợ khách hàng gửi yêu cầu tư vấn, kiểm tra tình trạng đơn hàng và kết nối nhanh chóng với đội ngũ chăm sóc khách hàng.</li>
 </ul>
 
  
 
 
-<h3 class="text-xl font-semibold text-slate-800 dark:text-slate-200 mt-4 mb-2">
- 1.2. Back end
-  </h3>
-  <ul class="list-disc pl-6 space-y-2 text-lg text-slate-800 dark:text-slate-300">
-<li>Phát triển backend bằng <strong>NestJS</strong>, đảm bảo kiến trúc rõ ràng, dễ mở rộng và bảo trì theo mô hình module hóa.</li>
-<li>Sử dụng <strong>TypeORM</strong> để thao tác dữ liệu, kết nối cơ sở dữ liệu <strong>PostgreSQL</strong> được triển khai trong môi trường <strong>Docker</strong>.</li>
-<li>Triển khai xác thực và phân quyền người dùng bằng <strong>Passport.js</strong>, hỗ trợ các strategy linh hoạt.</li>
-<li>Tích hợp <strong>AWS S3</strong> và <strong>CloudFront</strong> để lưu trữ và phân phối tài nguyên tĩnh; sử dụng <strong>RDS</strong> cho cơ sở dữ liệu được quản lý, <strong>Lambda</strong> cho serverless functions, <strong>SES</strong> để gửi email và <strong>EventBridge</strong> để lên lịch và điều phối sự kiện.</li>
-<li>Self-host hạ tầng và thiết lập pipeline <strong>CI/CD</strong> với <strong>GitLab</strong>, tự động hóa quá trình build, test và deploy.</li>
-<li>Thiết lập hệ thống <strong>Logging</strong> và <strong>Monitoring</strong> với <strong>Grafana Stack</strong>, theo dõi và phân tích hiệu năng hệ thống trong thời gian thực.</li>
-
-</ul>
-
-  <figure class="my-6">
-    <img src="/projects/project-flashcard-012.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-      Lưu trữ hình ảnh flashcard trên AWS S3
-    </figcaption>
-  </figure>
-
-   <figure class="my-6">
-    <img src="/projects/project-flashcard-013.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-     Phân phối hình ảnh qua AWS CloudFront
-    </figcaption>
-  </figure>
-
-    <figure class="my-6">
-    <img src="/projects/project-flashcard-014.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-    Hosting PostgreSQL với AWS RDS
-    </figcaption>
-  </figure>
-
-    <figure class="my-6">
-    <img src="/projects/project-flashcard-015.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-    Sử dụng AWS Lambda để tính toán các thẻ flashcard cần ôn lại
-    </figcaption>
-  </figure>
-
-    <figure class="my-6">
-    <img src="/projects/project-flashcard-016.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-    Sử dụng AWS SES để gửi email nhắc nhở các thẻ flashcard cần ôn lại
-    </figcaption>
-  </figure>
-
-    <figure class="my-6">
-    <img src="/projects/project-flashcard-017.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-    Lập lịch nhắc nhở ôn tập flashcard với AWS EventBridge
-    </figcaption>
-  </figure>
-
-      <figure class="my-6">
-    <img src="/projects/project-flashcard-018.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-    Self-host hạ tầng và thiết lập pipeline CI/CD với GitLab
-    </figcaption>
-  </figure>
-
-      <figure class="my-6">
-    <img src="/projects/project-flashcard-019.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-    Monitoring (Prometheus + Grafana + Node Exporter)
-    </figcaption>
-  </figure>
-
-       <figure class="my-6">
-    <img src="/projects/project-flashcard-020.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-    Logging (Loki + Promtail)
-    </figcaption>
-  </figure>
-
-
-
-  <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3">
-  2. Demo sản phẩm
-  </h2>
-
-  <p class="text-[18px]">Xem demo trực tiếp qua youtube tại <a class="text-blue-600 underline" href="https://www.youtube.com/watch?v=O62NVVQbYmE" target="_black">đây</a<</p>
+ 
    
 `,
     },
 
-    // public blockchain app
+    // katp
     {
-      id: "public-blockchain",
-      title: "Public blockchain cho website bản quyền sách",
+      id: "katp",
+      title: "Website salon tóc KATP",
 
-      href: "/projects/public-blockchain",
+      href: "/projects/katp",
       cover: [
-        "/projects/project-public-blockchain-001.png",
-        "/projects/project-public-blockchain-002.png",
-        "/projects/project-public-blockchain-003.png",
-        "/projects/project-public-blockchain-004.png",
+        "/projects/project-katp-001.png",
+        "/projects/project-katp-002.png",
+        "/projects/project-katp-003.png",
+        "/projects/project-katp-004.png",
+        "/projects/project-katp-005.png",
+        "/projects/project-katp-006.png",
+        "/projects/project-katp-007.png",
+        "/projects/project-katp-008.png",
+        "/projects/project-katp-009.png",
       ],
       stack: [
         "Next.js",
@@ -319,33 +219,24 @@ export const experienceItems: Record<Locale, ExperienceItem[]> = {
       // githubRepoBack:
       //   "https://github.com/vuutruongnhatthanhhh/ecommerce-nodejs",
       youtube: "https://www.youtube.com/watch?v=iKCZgjaPt_U",
-      clientName: "Khách hàng E",
-      clientAvatar: "/clients/client-e.png",
+      clientName: "KATP",
+      clientAvatar: "/clients/client-katp.png",
+      liveUrl: "https://katp.vercel.app/",
 
       contentHtml: `
-  <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3">
-   1. Công nghệ sử dụng
-  </h2>
+  
 
   
 
 
-  <ul class="list-disc pl-6 space-y-2 text-lg mt-4 text-slate-800 dark:text-slate-300">
-<li>Xây dựng frontend với <strong>Next.js</strong>, tận dụng Server-Side Rendering (SSR) và Static Site Generation (SSG) để tối ưu hiệu năng và SEO cho nền tảng quản lý bản quyền sách.</li>
-<li>Phát triển smart contract bằng <strong>Solidity</strong> triển khai trên mạng <strong>Ethereum</strong> (Sepolia Testnet), đảm bảo tính minh bạch, bất biến và tự động hóa trong việc đăng ký, xác thực và chuyển nhượng bản quyền tác phẩm.</li>
-
-<li>Tích hợp <strong>Web3.js</strong> kết hợp <strong>MetaMask</strong> để kết nối ví người dùng với blockchain <strong>Ethereum</strong>, xử lý xác thực danh tính phi tập trung và thực hiện các giao dịch on-chain như mint token bản quyền, kiểm tra quyền sở hữu trên <strong>Sepolia Testnet</strong> một cách liền mạch và bảo mật.</li>
-
+  <ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
+  <li>Trang giới thiệu chia sẻ câu chuyện thương hiệu, đội ngũ stylist chuyên nghiệp và không gian làm đẹp hiện đại của salon.</li>
+  <li>Trang dịch vụ cung cấp thông tin chi tiết về các dịch vụ như cắt tóc, uốn, nhuộm, phục hồi và chăm sóc tóc chuyên sâu.</li>
+  <li>Trang bộ sưu tập trưng bày các mẫu tóc nổi bật, xu hướng mới nhất và những hình ảnh thực tế từ khách hàng.</li>
+  <li>Trang liên hệ giúp khách hàng đặt lịch hẹn nhanh chóng, nhận tư vấn và kết nối trực tiếp với salon.</li>
 </ul>
 
-  <figure class="my-6">
-    <img src="/projects/project-public-blockchain-005.png"
-         alt=""
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-    Xử lý xác thực danh tính phi tập trung và thực hiện các giao dịch on-chain
-    </figcaption>
-  </figure>
+ 
 
    
 
@@ -353,32 +244,24 @@ export const experienceItems: Record<Locale, ExperienceItem[]> = {
 
 
   <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3">
-  2. Ứng dụng
-  </h2>
-
-  <p class="text-[18px]"></p>
-   <ul class="list-disc pl-6 space-y-2 text-lg mt-4 text-slate-800 dark:text-slate-300">
-<li>Dự án từng được bản thân sử dụng để dạy học online, xem chi tiết tại <a class="text-blue-600 underline" href="https://drive.google.com/drive/folders/1ae65FO7WClgyoKdt14JFuAKKtioy5ON8?usp=sharing" target="_black">đây</a></li>
-<li>Xem demo dự án tại <a class="text-blue-600 underline" href="https://www.youtube.com/watch?v=iKCZgjaPt_U" target="_black">đây</a></li>
-
-
-</ul>
 `,
     },
 
-    // room booking app
+    // tenjin
     {
-      id: "room-booking",
-      title: "Website đặt lịch phòng họp",
+      id: "tenjin",
+      title: "Website marketing bất động sản Tenjin",
 
-      href: "/projects/room-booking",
+      href: "/projects/tenjin",
       cover: [
-        "/projects/meeting_001.png",
-        "/projects/meeting_002.png",
-        "/projects/meeting_003.png",
-        "/projects/meeting_004.png",
-        "/projects/meeting_005.png",
-        "/projects/meeting_006.png",
+        "/projects/project-tenjin-001.png",
+        "/projects/project-tenjin-002.png",
+        "/projects/project-tenjin-003.png",
+        "/projects/project-tenjin-004.png",
+        "/projects/project-tenjin-005.png",
+        "/projects/project-tenjin-006.png",
+        "/projects/project-tenjin-007.png",
+        "/projects/project-tenjin-008.png",
       ],
       stack: ["Angular", "Asp.Net Core", "SQL Server"],
       // githubRepo: "https://github.com/yourname/project",
@@ -387,38 +270,119 @@ export const experienceItems: Record<Locale, ExperienceItem[]> = {
       githubRepoBack:
         "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-api",
       youtube: "https://www.youtube.com/watch?v=d6vigsSpwDo",
-      clientName: "Khách hàng B",
-      clientAvatar: "/clients/client-b.png",
+      clientName: "Tenjin",
+      clientAvatar: "/clients/client-tenjin.webp",
+      liveUrl: "https://tenjin-agency.vercel.app/",
 
       contentHtml: `
-  <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3">
-   1. Công nghệ sử dụng
-  </h2>
+  
 
   
 
 
-  <ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
-<li>Xây dựng frontend với <strong>Angular</strong> để tạo giao diện hiện đại, hiệu năng cao và dễ bảo trì.</li>
-<li>Xây dựng RESTful API với <strong>ASP.NET Core Web API</strong>, kết hợp <strong>Entity Framework Core</strong> và <strong>SQL Server</strong> để quản lý dữ liệu phòng họp, người dùng và lịch đặt phòng.</li>
+<ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
+  <li>Trang giới thiệu cung cấp thông tin về công ty, tầm nhìn phát triển và đội ngũ chuyên viên giàu kinh nghiệm trong lĩnh vực bất động sản.</li>
+  <li>Trang dự án giới thiệu các căn hộ, nhà phố, đất nền và dự án nổi bật với đầy đủ hình ảnh, tiện ích và thông tin chi tiết.</li>
+  <li>Trang tin tức cập nhật xu hướng thị trường, kiến thức đầu tư và những phân tích chuyên sâu về bất động sản.</li>
+  <li>Trang liên hệ hỗ trợ khách hàng đăng ký nhận tư vấn, đặt lịch tham quan và kết nối nhanh chóng với đội ngũ kinh doanh.</li>
 </ul>
 
-  <figure class="my-6">
-    <img src="/projects/meeting_007.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-     Sử dụng SQL Server Management Studio (SSMS) để quản lý và theo dõi cơ sở dữ liệu SQL Server.
-    </figcaption>
-  </figure>
+ 
 
   
-  <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3">
-  2. Demo sản phẩm
-  </h2>
+ 
+`,
+    },
 
-  <p class="text-[18px]">Xem demo trực tiếp qua youtube tại <a class="text-blue-600 underline" href="https://www.youtube.com/watch?v=d6vigsSpwDo" target="_black">đây</a<</p>
-   
+    // thuong-nail
+    {
+      id: "thuong-nail",
+      title: "Website salon nail Thương Nail",
+
+      href: "/projects/thuong-nail",
+      cover: [
+        "/projects/project-thuong-nail-001.png",
+        "/projects/project-thuong-nail-002.png",
+        "/projects/project-thuong-nail-003.png",
+        "/projects/project-thuong-nail-004.png",
+        "/projects/project-thuong-nail-005.png",
+        "/projects/project-thuong-nail-006.png",
+      ],
+      stack: ["Angular", "Asp.Net Core", "SQL Server"],
+      // githubRepo: "https://github.com/yourname/project",
+      githubRepoFront:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-fe",
+      githubRepoBack:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-api",
+      youtube: "https://www.youtube.com/watch?v=d6vigsSpwDo",
+      clientName: "Thương Nail",
+      clientAvatar: "/clients/client-thuong-nail.png",
+      liveUrl: "https://thuong-nail.vercel.app/",
+
+      contentHtml: `
+  
+
+  
+
+
+<ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
+  <li>Trang giới thiệu chia sẻ câu chuyện thương hiệu, đội ngũ kỹ thuật viên chuyên nghiệp và không gian làm đẹp sang trọng của tiệm nail.</li>
+  <li>Trang dịch vụ cung cấp thông tin chi tiết về các dịch vụ như sơn gel, đắp bột, nối móng, vẽ nail nghệ thuật và chăm sóc tay chân.</li>
+  <li>Trang bộ sưu tập trưng bày những mẫu nail nổi bật, xu hướng mới nhất và hình ảnh thực tế từ khách hàng.</li>
+  <li>Trang liên hệ giúp khách hàng đặt lịch hẹn nhanh chóng, nhận tư vấn và kết nối trực tiếp với đội ngũ kỹ thuật viên.</li>
+</ul>
+
+ 
+
+  
+ 
+`,
+    },
+
+    // xua-cu-coffee
+    {
+      id: "xua-cu-coffee",
+      title: "Website quán cà phê Xưa Cũ Coffee",
+
+      href: "/projects/xua-cu-coffee",
+      cover: [
+        "/projects/project-xua-cu-coffee-001.png",
+        "/projects/project-xua-cu-coffee-002.png",
+        "/projects/project-xua-cu-coffee-003.png",
+        "/projects/project-xua-cu-coffee-004.png",
+        "/projects/project-xua-cu-coffee-005.png",
+        "/projects/project-xua-cu-coffee-006.png",
+        "/projects/project-xua-cu-coffee-007.png",
+        "/projects/project-xua-cu-coffee-008.png",
+      ],
+      stack: ["Angular", "Asp.Net Core", "SQL Server"],
+      // githubRepo: "https://github.com/yourname/project",
+      githubRepoFront:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-fe",
+      githubRepoBack:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-api",
+      youtube: "https://www.youtube.com/watch?v=d6vigsSpwDo",
+      clientName: "Xưa Cũ Coffee",
+      clientAvatar: "/clients/client-xua-cu-coffee.png",
+      liveUrl: "https://xua-cu-coffee.vercel.app/",
+
+      contentHtml: `
+  
+
+  
+
+
+<ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
+  <li>Trang giới thiệu chia sẻ câu chuyện thương hiệu, nguồn nguyên liệu chất lượng và không gian thưởng thức hiện đại của cửa hàng.</li>
+  <li>Trang thực đơn giới thiệu đa dạng các loại cà phê, trà sữa, trà trái cây và các món ăn kèm hấp dẫn.</li>
+  <li>Trang tin tức cập nhật các chương trình khuyến mãi, sản phẩm mới và những bài viết thú vị về văn hóa cà phê.</li>
+  <li>Trang liên hệ giúp khách hàng đặt hàng, gửi phản hồi và kết nối nhanh chóng với đội ngũ chăm sóc khách hàng.</li>
+</ul>
+
+ 
+
+  
+ 
 `,
     },
   ],
@@ -521,23 +485,20 @@ export const experienceItems: Record<Locale, ExperienceItem[]> = {
 
 `,
     },
+    // bighead
     {
-      id: "flashcard",
-      title: "English Vocabulary Learning Website with Flashcards",
+      id: "bighead",
+      title: "BigHead Motorcycle Parts Website",
 
-      href: "/projects/flashcard",
+      href: "/projects/bighead",
       cover: [
-        "/projects/project-flashcard-002.png",
-        "/projects/project-flashcard-001.png",
-        "/projects/project-flashcard-003.png",
-        "/projects/project-flashcard-004.png",
-        "/projects/project-flashcard-005.png",
-        "/projects/project-flashcard-006.png",
-        "/projects/project-flashcard-007.png",
-        "/projects/project-flashcard-008.png",
-        "/projects/project-flashcard-009.png",
-        "/projects/project-flashcard-010.png",
-        "/projects/project-flashcard-011.png",
+        "/projects/project-bighead-001.png",
+        "/projects/project-bighead-002.png",
+        "/projects/project-bighead-003.png",
+        "/projects/project-bighead-004.png",
+        "/projects/project-bighead-005.png",
+        "/projects/project-bighead-006.png",
+        "/projects/project-bighead-007.png",
       ],
       stack: [
         "Next.js",
@@ -559,144 +520,46 @@ export const experienceItems: Record<Locale, ExperienceItem[]> = {
       githubRepoBack:
         "https://gitlab.com/vuutruongnhatthanh-group/flashcard-nestjs",
       youtube: "https://www.youtube.com/watch?v=O62NVVQbYmE",
-      clientName: "Khách hàng C",
-      clientAvatar: "/clients/client-c.png",
+      clientName: "BigHead",
+      clientAvatar: "/clients/client-bighead.png",
+      liveUrl: "https://bighead-eight.vercel.app/",
 
       contentHtml: `
-  <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3">
-   1. Technologies Used
-  </h2>
+ 
 
   
 
-<h3 class="text-xl font-semibold text-slate-800 dark:text-slate-200 mt-4 mb-2">
- 1.1. Front end
-  </h3>
-  <ul class="list-disc pl-6 space-y-2 text-lg text-slate-800 dark:text-slate-300">
-<li>Build the frontend with <strong>Next.js</strong> and <strong>MUI (Material UI)</strong> to create a modern interface. </li>
-<li>Integrate <strong>Zustand</strong> for managing application state including login information, light/dark mode, and recently learned flashcards.</li>
 
-<li>Implement user authentication with <strong>NextAuth</strong>, supporting login via Google and GitHub accounts.</li>
- 
+<ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
+  <li>The About page introduces the store, its mission, and commitment to providing high-quality motorcycle accessories.</li>
+  <li>The Products page showcases a wide range of items, including helmets, gloves, auxiliary lights, top boxes, and protective gear.</li>
+  <li>The News page shares product reviews, riding tips, and useful articles for motorcycle enthusiasts.</li>
+  <li>The Contact page allows customers to submit inquiries, check order status, and connect quickly with the support team.</li>
 </ul>
 
  
 
 
-<h3 class="text-xl font-semibold text-slate-800 dark:text-slate-200 mt-4 mb-2">
- 1.2. Back end
-  </h3>
-  <ul class="list-disc pl-6 space-y-2 text-lg text-slate-800 dark:text-slate-300">
-<li>Develop the backend with <strong>NestJS</strong>, ensuring a clear architecture, easy scalability, and maintainability following a module-based approach.</li>
-<li>Use <strong>TypeORM</strong> for data manipulation, connecting to the <strong>PostgreSQL</strong> database deployed in a <strong>Docker</strong> environment.</li>
-<li>Implement user authentication and authorization with <strong>Passport.js</strong>, supporting flexible authentication strategies.</li>
-<li>Integrate <strong>AWS S3</strong> and <strong>CloudFront</strong> for storing and distributing static resources; use <strong>RDS</strong> for managed database services, <strong>Lambda</strong> for serverless functions, <strong>SES</strong> for email sending, and <strong>EventBridge</strong> for scheduling and event orchestration.</li>
-<li>Self-host the infrastructure and set up a <strong>CI/CD</strong> pipeline with <strong>GitLab</strong>, automating the build, test, and deployment processes.</li>
-<li>Set up <strong>Logging</strong> and <strong>Monitoring</strong> systems with the <strong>Grafana Stack</strong>, enabling real-time performance tracking and analysis.</li>
-
-</ul>
-
-  <figure class="my-6">
-    <img src="/projects/project-flashcard-012.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-      Storing flashcard images on AWS S3
-    </figcaption>
-  </figure>
-
-   <figure class="my-6">
-    <img src="/projects/project-flashcard-013.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-     Distributing images via AWS CloudFront
-    </figcaption>
-  </figure>
-
-    <figure class="my-6">
-    <img src="/projects/project-flashcard-014.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-    Hosting PostgreSQL with AWS RDS
-    </figcaption>
-  </figure>
-
-    <figure class="my-6">
-    <img src="/projects/project-flashcard-015.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-    Using AWS Lambda to calculate flashcards that need to be reviewed
-    </figcaption>
-  </figure>
-
-    <figure class="my-6">
-    <img src="/projects/project-flashcard-016.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-    Using AWS SES to send reminder emails for flashcards that need to be reviewed
-    </figcaption>
-  </figure>
-
-    <figure class="my-6">
-    <img src="/projects/project-flashcard-017.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-    Scheduling review reminders for flashcards with AWS EventBridge
-    </figcaption>
-  </figure>
-
-      <figure class="my-6">
-    <img src="/projects/project-flashcard-018.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-    Self-host the infrastructure and set up pipeline CI/CD with GitLab
-    </figcaption>
-  </figure>
-
-      <figure class="my-6">
-    <img src="/projects/project-flashcard-019.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-    Monitoring (Prometheus + Grafana + Node Exporter)
-    </figcaption>
-  </figure>
-
-       <figure class="my-6">
-    <img src="/projects/project-flashcard-020.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-    Logging (Loki + Promtail)
-    </figcaption>
-  </figure>
-
-
-
-  <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3">
-  2. Product Demo
-  </h2>
-
-  <p class="text-[18px]">Watch the live demo on YouTube at <a class="text-blue-600 underline" href="https://www.youtube.com/watch?v=O62NVVQbYmE" target="_black">here</a<</p>
+ 
    
 `,
     },
+    // katp
     {
-      id: "public-blockchain",
-      title: "Public Blockchain for Book Copyright Registration Website",
+      id: "katp",
+      title: "KATP Hair Salon Website",
 
-      href: "/projects/public-blockchain",
+      href: "/projects/katp",
       cover: [
-        "/projects/project-public-blockchain-001.png",
-        "/projects/project-public-blockchain-002.png",
-        "/projects/project-public-blockchain-003.png",
-        "/projects/project-public-blockchain-004.png",
+        "/projects/project-katp-001.png",
+        "/projects/project-katp-002.png",
+        "/projects/project-katp-003.png",
+        "/projects/project-katp-004.png",
+        "/projects/project-katp-005.png",
+        "/projects/project-katp-006.png",
+        "/projects/project-katp-007.png",
+        "/projects/project-katp-008.png",
+        "/projects/project-katp-009.png",
       ],
       stack: [
         "Next.js",
@@ -715,33 +578,24 @@ export const experienceItems: Record<Locale, ExperienceItem[]> = {
       // githubRepoBack:
       //   "https://github.com/vuutruongnhatthanhhh/ecommerce-nodejs",
       youtube: "https://www.youtube.com/watch?v=iKCZgjaPt_U",
-      clientName: "Khách hàng E",
-      clientAvatar: "/clients/client-e.png",
+      clientName: "KATP",
+      clientAvatar: "/clients/client-katp.png",
+      liveUrl: "https://katp.vercel.app/",
 
       contentHtml: `
-  <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3">
-   1. Technologies Used
-  </h2>
+  
 
   
 
 
-  <ul class="list-disc pl-6 space-y-2 text-lg mt-4 text-slate-800 dark:text-slate-300">
-<li>Built the frontend using <strong>Next.js</strong>, leveraging Server-Side Rendering (SSR) and Static Site Generation (SSG) to optimize performance and SEO for a book copyright management platform.</li>
-<li>Developed smart contracts in <strong>Solidity</strong> deployed on the <strong>Ethereum</strong> (Sepolia Testnet) network, ensuring transparency, immutability, and automation in the registration, verification, and transfer of intellectual property rights.</li>
-
-<li>Integrated <strong>Web3.js</strong> with <strong>MetaMask</strong> to connect user wallets to the <strong>Ethereum</strong> blockchain, enabling decentralized authentication and handling on-chain transactions such as minting copyright tokens and verifying ownership on <strong>Sepolia Testnet</strong> seamlessly and securely.</li>
-
+ <ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
+  <li>The About page shares the brand story, introduces the professional styling team, and highlights the salon’s modern beauty space.</li>
+  <li>The Services page provides detailed information about haircuts, perms, coloring, restoration treatments, and intensive hair care services.</li>
+  <li>The Gallery page showcases featured hairstyles, the latest trends, and real photos from clients.</li>
+  <li>The Contact page allows customers to book appointments quickly, receive consultations, and connect directly with the salon.</li>
 </ul>
 
-  <figure class="my-6">
-    <img src="/projects/project-public-blockchain-005.png"
-         alt=""
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-    Handling decentralized identity verification and executing on-chain transactions
-    </figcaption>
-  </figure>
+ 
 
    
 
@@ -749,31 +603,23 @@ export const experienceItems: Record<Locale, ExperienceItem[]> = {
 
 
   <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3">
-  2. Application
-  </h2>
-
-  <p class="text-[18px]"></p>
-   <ul class="list-disc pl-6 space-y-2 text-lg mt-4 text-slate-800 dark:text-slate-300">
-<li>The project has been used by the author for online teaching, see details at <a class="text-blue-600 underline" href="https://drive.google.com/drive/folders/1ae65FO7WClgyoKdt14JFuAKKtioy5ON8?usp=sharing" target="_black">here</a></li>
-<li>Watch the project demo at <a class="text-blue-600 underline" href="https://www.youtube.com/watch?v=iKCZgjaPt_U" target="_black">here</a></li>
-
-
-</ul>
 `,
     },
-
+    // tenjin
     {
-      id: "room-booking",
-      title: "Meeting Room Booking Website",
+      id: "tenjin",
+      title: "Tenjin Real Estate Marketing Website",
 
-      href: "/projects/room-booking",
+      href: "/projects/tenjin",
       cover: [
-        "/projects/meeting_001.png",
-        "/projects/meeting_002.png",
-        "/projects/meeting_003.png",
-        "/projects/meeting_004.png",
-        "/projects/meeting_005.png",
-        "/projects/meeting_006.png",
+        "/projects/project-tenjin-001.png",
+        "/projects/project-tenjin-002.png",
+        "/projects/project-tenjin-003.png",
+        "/projects/project-tenjin-004.png",
+        "/projects/project-tenjin-005.png",
+        "/projects/project-tenjin-006.png",
+        "/projects/project-tenjin-007.png",
+        "/projects/project-tenjin-008.png",
       ],
       stack: ["Angular", "Asp.Net Core", "SQL Server"],
       // githubRepo: "https://github.com/yourname/project",
@@ -782,38 +628,115 @@ export const experienceItems: Record<Locale, ExperienceItem[]> = {
       githubRepoBack:
         "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-api",
       youtube: "https://www.youtube.com/watch?v=d6vigsSpwDo",
-      clientName: "Khách hàng B",
-      clientAvatar: "/clients/client-b.png",
+      clientName: "Tenjin",
+      clientAvatar: "/clients/client-tenjin.webp",
+      liveUrl: "https://tenjin-agency.vercel.app/",
 
       contentHtml: `
-  <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3">
-   1. Technologies Used
-  </h2>
+  
 
   
 
-
-  <ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
-<li>Built the frontend with <strong>Angular</strong> to create a modern, high-performance, and maintainable user interface.</li>
-<li>Developed RESTful APIs with <strong>ASP.NET Core Web API</strong>, integrated with <strong>Entity Framework Core</strong> and <strong>SQL Server</strong> to manage data for meeting rooms, users, and booking schedules.</li>
+<ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
+  <li>The About page provides information about the company, its vision, and a team of experienced real estate professionals.</li>
+  <li>The Projects page showcases featured apartments, townhouses, land plots, and developments with detailed information, amenities, and high-quality images.</li>
+  <li>The News page delivers market trends, investment insights, and in-depth analysis of the real estate industry.</li>
+  <li>The Contact page allows clients to request consultations, schedule property tours, and connect quickly with the sales team.</li>
 </ul>
 
-  <figure class="my-6">
-    <img src="/projects/meeting_007.png"
-         alt="System architecture"
-         class="w-full max-w-full rounded-lg shadow-md mx-auto" />
-    <figcaption class="mt-2 text-lg text-slate-700 dark:text-slate-400 text-center">
-     Using SQL Server Management Studio (SSMS) to manage and monitor the SQL Server database.
-    </figcaption>
-  </figure>
+ 
 
   
-  <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-3">
-  2. Application
-  </h2>
+ 
+`,
+    },
+    // thuong-nail
+    {
+      id: "thuong-nail",
+      title: "Thương Nail Nail Salon Website",
 
-  <p class="text-[18px]">View the demo directly on YouTube at <a class="text-blue-600 underline" href="https://www.youtube.com/watch?v=d6vigsSpwDo" target="_black">this link</a></p>
-   
+      href: "/projects/thuong-nail",
+      cover: [
+        "/projects/project-thuong-nail-001.png",
+        "/projects/project-thuong-nail-002.png",
+        "/projects/project-thuong-nail-003.png",
+        "/projects/project-thuong-nail-004.png",
+        "/projects/project-thuong-nail-005.png",
+        "/projects/project-thuong-nail-006.png",
+      ],
+      stack: ["Angular", "Asp.Net Core", "SQL Server"],
+      // githubRepo: "https://github.com/yourname/project",
+      githubRepoFront:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-fe",
+      githubRepoBack:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-api",
+      youtube: "https://www.youtube.com/watch?v=d6vigsSpwDo",
+      clientName: "Thương Nail",
+      clientAvatar: "/clients/client-thuong-nail.png",
+      liveUrl: "https://thuong-nail.vercel.app/",
+
+      contentHtml: `
+  
+
+  
+
+
+<ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
+  <li>The About page shares the brand story, introduces the professional nail technicians, and highlights the salon’s elegant beauty space.</li>
+  <li>The Services page provides detailed information about gel polish, acrylic nails, nail extensions, custom nail art, and manicure and pedicure treatments.</li>
+  <li>The Gallery page showcases featured nail designs, the latest trends, and real photos from clients.</li>
+  <li>The Contact page allows customers to book appointments quickly, receive consultations, and connect directly with the salon team.</li>
+</ul>
+
+ 
+
+  
+ 
+`,
+    },
+    // xua-cu-coffee
+    {
+      id: "xua-cu-coffee",
+      title: "Xua Cũ Coffee Shop Website",
+
+      href: "/projects/xua-cu-coffee",
+      cover: [
+        "/projects/project-xua-cu-coffee-001.png",
+        "/projects/project-xua-cu-coffee-002.png",
+        "/projects/project-xua-cu-coffee-003.png",
+        "/projects/project-xua-cu-coffee-004.png",
+        "/projects/project-xua-cu-coffee-005.png",
+        "/projects/project-xua-cu-coffee-006.png",
+        "/projects/project-xua-cu-coffee-007.png",
+        "/projects/project-xua-cu-coffee-008.png",
+      ],
+      stack: ["Angular", "Asp.Net Core", "SQL Server"],
+      // githubRepo: "https://github.com/yourname/project",
+      githubRepoFront:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-fe",
+      githubRepoBack:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-api",
+      youtube: "https://www.youtube.com/watch?v=d6vigsSpwDo",
+      clientName: "Xưa Cũ Coffee",
+      clientAvatar: "/clients/client-xua-cu-coffee.png",
+      liveUrl: "https://xua-cu-coffee.vercel.app/",
+
+      contentHtml: `
+  
+
+  
+
+
+<ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
+  <li>The About page shares the brand story, highlights the quality ingredients, and introduces the shop’s modern and inviting atmosphere.</li>
+  <li>The Menu page features a wide selection of coffee, milk tea, fruit tea, and delicious snacks.</li>
+  <li>The News page updates customers on promotions, new products, and engaging articles about coffee culture.</li>
+  <li>The Contact page allows customers to place orders, submit feedback, and connect quickly with the support team.</li>
+</ul>
+ 
+
+  
+ 
 `,
     },
   ],

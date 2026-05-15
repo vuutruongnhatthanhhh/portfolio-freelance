@@ -148,6 +148,44 @@ const projects: PersonalProject[] = [
     highlight: false,
     showDetail: true,
   },
+  {
+    id: "thuong-nail",
+    title: {
+      vi: "Website salon nail Thương Nail",
+      en: "Thương Nail Nail Salon Website",
+    },
+    timeframe: "2025",
+    shortDesc: {
+      vi: "Website salon nail Thương Nail giúp khách hàng khám phá các dịch vụ chăm sóc móng tay chuyên nghiệp như sơn, uốn, và phục hồi, đồng thời dễ dàng đặt lịch hẹn và tham khảo các mẫu nail mới nhất.",
+      en: "A nail salon website that helps customers discover professional nail care services such as manicures, pedicures, and nail art, while making it easy to book appointments and browse the latest nail styles.",
+    },
+    clientName: "Thương Nail",
+    clientAvatar: "/clients/client-thuong-nail.png",
+    liveUrl: "https://thuong-nail.vercel.app/",
+    href: "/projects/thuong-nail",
+    cover: "/projects/project-thuong-nail.png",
+    highlight: false,
+    showDetail: true,
+  },
+  {
+    id: "xua-cu-coffee",
+    title: {
+      vi: "Website quán cà phê Xưa Cũ Coffee",
+      en: "Xưa Cũ Coffee Shop Website",
+    },
+    timeframe: "2025",
+    shortDesc: {
+      vi: "Website quán cà phê Xưa Cũ Coffee giúp khách hàng khám phá các dịch vụ phục vụ cà phê chuyên nghiệp như pha chế, phục vụ và bán hàng, đồng thời dễ dàng đặt lịch hẹn và tham khảo các mẫu cà phê mới nhất.",
+      en: "A coffee shop website that helps customers discover professional coffee services such as brewing, service, and sales, while making it easy to book appointments and browse the latest coffee styles.",
+    },
+    clientName: "Xưa Cũ Coffee",
+    clientAvatar: "/clients/client-xua-cu-coffee.png",
+    liveUrl: "https://xua-cu-coffee.vercel.app/",
+    href: "/projects/xua-cu-coffee",
+    cover: "/projects/project-xua-cu-coffee.png",
+    highlight: false,
+    showDetail: true,
+  },
 ];
 
 /* ===================== Motion variants ===================== */
