@@ -385,6 +385,52 @@ export const experienceItems: Record<Locale, ExperienceItem[]> = {
  
 `,
     },
+
+    // prestige-dentist
+    {
+      id: "prestige-dentist",
+      title: "Website nha khoa Prestige Dentist",
+
+      href: "/projects/prestige-dentist",
+      cover: [
+        "/projects/project-prestige-dentist-001.png",
+        "/projects/project-prestige-dentist-002.png",
+        "/projects/project-prestige-dentist-003.png",
+        "/projects/project-prestige-dentist-004.png",
+        "/projects/project-prestige-dentist-005.png",
+        "/projects/project-prestige-dentist-006.png",
+        "/projects/project-prestige-dentist-007.png",
+      ],
+      stack: ["Angular", "Asp.Net Core", "SQL Server"],
+      // githubRepo: "https://github.com/yourname/project",
+      githubRepoFront:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-fe",
+      githubRepoBack:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-api",
+      youtube: "https://www.youtube.com/watch?v=d6vigsSpwDo",
+      clientName: "Prestige Dentist",
+      clientAvatar: "/clients/client-prestige-dentist.png",
+      liveUrl: "https://dentist-ashy-one.vercel.app/",
+
+      contentHtml: `
+  
+
+  
+
+
+<ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
+  <li>Trang giới thiệu cung cấp thông tin về phòng khám, đội ngũ bác sĩ giàu kinh nghiệm và hệ thống trang thiết bị hiện đại.</li>
+  <li>Trang dịch vụ trình bày chi tiết các dịch vụ như khám răng tổng quát, tẩy trắng, niềng răng, trồng implant và thẩm mỹ nha khoa.</li>
+  <li>Trang tin tức chia sẻ kiến thức chăm sóc răng miệng, tư vấn từ chuyên gia và những cập nhật mới nhất trong lĩnh vực nha khoa.</li>
+  <li>Trang liên hệ giúp khách hàng đặt lịch khám, gửi câu hỏi và kết nối nhanh chóng với đội ngũ tư vấn của phòng khám.</li>
+</ul>
+
+ 
+
+  
+ 
+`,
+    },
   ],
   en: [
     // dai partners corporate
@@ -733,6 +779,51 @@ export const experienceItems: Record<Locale, ExperienceItem[]> = {
   <li>The News page updates customers on promotions, new products, and engaging articles about coffee culture.</li>
   <li>The Contact page allows customers to place orders, submit feedback, and connect quickly with the support team.</li>
 </ul>
+ 
+
+  
+ 
+`,
+    },
+    // prestige-dentist
+    {
+      id: "prestige-dentist",
+      title: "Prestige Dentist Website",
+
+      href: "/projects/prestige-dentist",
+      cover: [
+        "/projects/project-prestige-dentist-001.png",
+        "/projects/project-prestige-dentist-002.png",
+        "/projects/project-prestige-dentist-003.png",
+        "/projects/project-prestige-dentist-004.png",
+        "/projects/project-prestige-dentist-005.png",
+        "/projects/project-prestige-dentist-006.png",
+        "/projects/project-prestige-dentist-007.png",
+      ],
+      stack: ["Angular", "Asp.Net Core", "SQL Server"],
+      // githubRepo: "https://github.com/yourname/project",
+      githubRepoFront:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-fe",
+      githubRepoBack:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-api",
+      youtube: "https://www.youtube.com/watch?v=d6vigsSpwDo",
+      clientName: "Prestige Dentist",
+      clientAvatar: "/clients/client-prestige-dentist.png",
+      liveUrl: "https://dentist-ashy-one.vercel.app/",
+
+      contentHtml: `
+  
+
+  
+
+
+<ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
+  <li>The About page provides information about the clinic, its experienced dentists, and state-of-the-art equipment.</li>
+  <li>The Services page presents detailed information about general checkups, teeth whitening, orthodontics, dental implants, and cosmetic dentistry.</li>
+  <li>The News page shares oral care tips, expert advice, and the latest updates in the dental industry.</li>
+  <li>The Contact page allows patients to book appointments, submit questions, and connect quickly with the clinic’s support team.</li>
+</ul>
+
  
 
   

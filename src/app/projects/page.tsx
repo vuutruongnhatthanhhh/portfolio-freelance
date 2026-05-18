@@ -186,6 +186,25 @@ const projects: PersonalProject[] = [
     highlight: false,
     showDetail: true,
   },
+  {
+    id: "prestige-dentist",
+    title: {
+      vi: "Website nha khoa Prestige Dentist",
+      en: "Prestige Dentist Website",
+    },
+    timeframe: "2025",
+    shortDesc: {
+      vi: "Website nha khoa Prestige Dentist giúp khách hàng khám phá các dịch vụ nha khoa chuyên nghiệp như điều trị, chăm sóc răng miệng và tư vấn, đồng thời dễ dàng đặt lịch hẹn và tham khảo các phương pháp điều trị mới nhất.",
+      en: "A dental website that helps customers discover professional dental services such as treatments, oral care, and consultations, while making it easy to book appointments and browse the latest treatment methods.",
+    },
+    clientName: "Prestige Dentist",
+    clientAvatar: "/clients/client-prestige-dentist.png",
+    liveUrl: "https://dentist-ashy-one.vercel.app/",
+    href: "/projects/prestige-dentist",
+    cover: "/projects/project-prestige-dentist.png",
+    highlight: false,
+    showDetail: true,
+  },
 ];
 
 /* ===================== Motion variants ===================== */
