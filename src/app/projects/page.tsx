@@ -205,6 +205,45 @@ const projects: PersonalProject[] = [
     highlight: false,
     showDetail: true,
   },
+  {
+    id: "course-mkt",
+    title: {
+      vi: "Website bán khóa học marketing online",
+      en: "Online Marketing Course Website",
+    },
+    timeframe: "2025",
+    shortDesc: {
+      vi: "Website bán khóa học marketing online giúp khách hàng khám phá các khóa học chuyên nghiệp như digital marketing, content marketing và social media marketing, đồng thời dễ dàng đăng ký và tham gia các khóa học mới nhất.",
+      en: "An online marketing course website that helps customers discover professional courses such as digital marketing, content marketing, and social media marketing, while making it easy to enroll and participate in the latest courses.",
+    },
+    clientName: "MarkPro",
+    clientAvatar: "/clients/client-markpro.webp",
+    liveUrl: "https://course-mkt.vercel.app/",
+    href: "/projects/course-mkt",
+    cover: "/projects/project-course-mkt.png",
+    highlight: false,
+    showDetail: true,
+  },
+
+  {
+    id: "homevip",
+    title: {
+      vi: "Website bán nhà đất HomeVIP",
+      en: "HomeVIP Real Estate Website",
+    },
+    timeframe: "2025",
+    shortDesc: {
+      vi: "Website bán nhà đất HomeVIP giúp khách hàng khám phá các dự án bất động sản hấp dẫn, dễ dàng tìm kiếm và đăng ký tư vấn, đồng thời cập nhật thông tin thị trường mới nhất.",
+      en: "A real estate website that helps customers discover attractive property projects, easily search for listings, and register for consultations, while keeping them updated with the latest market information.",
+    },
+    clientName: "HomeVIP",
+    clientAvatar: "/clients/client-homevip.webp",
+    liveUrl: "https://real-estate-nu-tan.vercel.app/",
+    href: "/projects/homevip",
+    cover: "/projects/project-homevip.png",
+    highlight: false,
+    showDetail: true,
+  },
 ];
 
 /* ===================== Motion variants ===================== */

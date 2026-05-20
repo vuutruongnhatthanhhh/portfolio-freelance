@@ -431,6 +431,97 @@ export const experienceItems: Record<Locale, ExperienceItem[]> = {
  
 `,
     },
+    // course-mkt
+    {
+      id: "course-mkt",
+      title: "Website bán khóa học marketing online",
+
+      href: "/projects/course-mkt",
+      cover: [
+        "/projects/project-course-mkt-001.png",
+        "/projects/project-course-mkt-002.png",
+        "/projects/project-course-mkt-003.png",
+        "/projects/project-course-mkt-004.png",
+        "/projects/project-course-mkt-005.png",
+        "/projects/project-course-mkt-006.png",
+        "/projects/project-course-mkt-007.png",
+        "/projects/project-course-mkt-008.png",
+      ],
+      stack: ["Angular", "Asp.Net Core", "SQL Server"],
+      // githubRepo: "https://github.com/yourname/project",
+      githubRepoFront:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-fe",
+      githubRepoBack:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-api",
+      youtube: "https://www.youtube.com/watch?v=d6vigsSpwDo",
+      clientName: "MarkPro",
+      clientAvatar: "/clients/client-markpro.webp",
+      liveUrl: "https://course-mkt.vercel.app/",
+
+      contentHtml: `
+  
+
+  
+
+
+<ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
+  <li>Trang giới thiệu chia sẻ về sứ mệnh đào tạo, đội ngũ giảng viên và những giá trị mà nền tảng mang lại cho học viên.</li>
+  <li>Trang khóa học giới thiệu đa dạng các chương trình đào tạo về marketing như Facebook Ads, Google Ads, SEO, Content Marketing và TikTok Ads.</li>
+  <li>Trang blog cập nhật kiến thức thực chiến, xu hướng mới và các chiến lược marketing hiệu quả.</li>
+  <li>Trang liên hệ giúp học viên đăng ký tư vấn, giải đáp thắc mắc và kết nối nhanh chóng với đội ngũ hỗ trợ.</li>
+</ul>
+ 
+
+  
+ 
+`,
+    },
+
+    // homevip
+    {
+      id: "homevip",
+      title: "Website bán nhà đất HomeVIP",
+
+      href: "/projects/homevip",
+      cover: [
+        "/projects/project-homevip-001.png",
+        "/projects/project-homevip-002.png",
+        "/projects/project-homevip-003.png",
+        "/projects/project-homevip-004.png",
+        "/projects/project-homevip-005.png",
+        "/projects/project-homevip-006.png",
+        "/projects/project-homevip-007.png",
+        "/projects/project-homevip-008.png",
+        "/projects/project-homevip-009.png",
+      ],
+      stack: ["Angular", "Asp.Net Core", "SQL Server"],
+      // githubRepo: "https://github.com/yourname/project",
+      githubRepoFront:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-fe",
+      githubRepoBack:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-api",
+      youtube: "https://www.youtube.com/watch?v=d6vigsSpwDo",
+      clientName: "HomeVIP",
+      clientAvatar: "/clients/client-homevip.webp",
+      liveUrl: "https://real-estate-nu-tan.vercel.app/",
+
+      contentHtml: `
+  
+
+  
+
+
+<ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
+  <li>Trang giới thiệu cung cấp thông tin về công ty, kinh nghiệm hoạt động và đội ngũ chuyên viên tư vấn bất động sản chuyên nghiệp.</li>
+  <li>Trang bất động sản giới thiệu đa dạng các căn hộ, nhà phố, đất nền và dự án nổi bật với đầy đủ thông tin và hình ảnh thực tế.</li>
+  <li>Trang tin tức chia sẻ kiến thức mua bán, đầu tư bất động sản và cập nhật xu hướng thị trường mới nhất.</li>
+  <li>Trang liên hệ giúp khách hàng đăng ký tư vấn, đặt lịch xem nhà và kết nối nhanh chóng với đội ngũ môi giới.</li>
+</ul>
+
+  
+ 
+`,
+    },
   ],
   en: [
     // dai partners corporate
@@ -825,6 +916,96 @@ export const experienceItems: Record<Locale, ExperienceItem[]> = {
 </ul>
 
  
+
+  
+ 
+`,
+    },
+    // course-mkt
+    {
+      id: "course-mkt",
+      title: "Online Marketing Course Website",
+
+      href: "/projects/course-mkt",
+      cover: [
+        "/projects/project-course-mkt-001.png",
+        "/projects/project-course-mkt-002.png",
+        "/projects/project-course-mkt-003.png",
+        "/projects/project-course-mkt-004.png",
+        "/projects/project-course-mkt-005.png",
+        "/projects/project-course-mkt-006.png",
+        "/projects/project-course-mkt-007.png",
+        "/projects/project-course-mkt-008.png",
+      ],
+      stack: ["Angular", "Asp.Net Core", "SQL Server"],
+      // githubRepo: "https://github.com/yourname/project",
+      githubRepoFront:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-fe",
+      githubRepoBack:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-api",
+      youtube: "https://www.youtube.com/watch?v=d6vigsSpwDo",
+      clientName: "MarkPro",
+      clientAvatar: "/clients/client-markpro.webp",
+      liveUrl: "https://course-mkt.vercel.app/",
+
+      contentHtml: `
+  
+
+  
+
+
+<ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
+  <li>The About page shares the platform’s training mission, introduces the instructors, and highlights the value delivered to students.</li>
+  <li>The Courses page features a variety of marketing programs, including Facebook Ads, Google Ads, SEO, Content Marketing, and TikTok Ads.</li>
+  <li>The Blog page provides practical insights, the latest trends, and effective marketing strategies.</li>
+  <li>The Contact page allows students to request consultations, ask questions, and connect quickly with the support team.</li>
+</ul>
+
+  
+ 
+`,
+    },
+
+    // homevip
+    {
+      id: "homevip",
+      title: "HomeVIP Real Estate Website",
+
+      href: "/projects/homevip",
+      cover: [
+        "/projects/project-homevip-001.png",
+        "/projects/project-homevip-002.png",
+        "/projects/project-homevip-003.png",
+        "/projects/project-homevip-004.png",
+        "/projects/project-homevip-005.png",
+        "/projects/project-homevip-006.png",
+        "/projects/project-homevip-007.png",
+        "/projects/project-homevip-008.png",
+        "/projects/project-homevip-009.png",
+      ],
+      stack: ["Angular", "Asp.Net Core", "SQL Server"],
+      // githubRepo: "https://github.com/yourname/project",
+      githubRepoFront:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-fe",
+      githubRepoBack:
+        "https://github.com/vuutruongnhatthanhhh/meeting-room-booking-api",
+      youtube: "https://www.youtube.com/watch?v=d6vigsSpwDo",
+      clientName: "HomeVIP",
+      clientAvatar: "/clients/client-homevip.webp",
+      liveUrl: "https://real-estate-nu-tan.vercel.app/",
+
+      contentHtml: `
+  
+
+  
+
+
+<ul class="list-disc pl-6 mt-4 space-y-2 text-lg text-slate-800 dark:text-slate-300">
+  <li>The About page provides information about the company, its industry experience, and a team of professional real estate consultants.</li>
+  <li>The Properties page showcases a wide range of apartments, houses, land plots, and featured developments with detailed information and real images.</li>
+  <li>The News page shares home buying and real estate investment insights, along with the latest market trends.</li>
+  <li>The Contact page allows clients to request consultations, schedule property viewings, and connect quickly with the brokerage team.</li>
+</ul>
 
   
  
